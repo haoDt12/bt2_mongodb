@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+       <div class="container">
+        <div class="row col-8 col-lg-5 m-auto mt-5 p-3 border border-primary">
+            <h2 class="rounded text-center text-white bg-info p-2">Thêm Nhân Viên</h2>
+            <form method="post" action="addNewNV/done">
+                <div class="mb-3">
+                    <label class="form-label">Tên</label>
+                    <input type="text" id="ten" class="form-control" >
+                </div>
+                <div class="mb-3">
+                    <label class="form-check-label"> Địa chỉ: </label>
+                    <input type="text"  class="form-control" id="diachi" >
+                </div>
+                <div class="mb-3">
+                    <label  class="form-label">Lương: </label>
+                    <input class="form-control"  type="number" id="luong" step="0.1">
+                </div>
+                <div class="row">
+                       <div class="col-6">
+                        <a class="col-6" href="ds">Hủy</a>
+                    </div>
+                    <div class="col text-end">
+                        <input type="submit" class="btn btn-primary" value="Xác nhận">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
