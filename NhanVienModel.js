@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const NhanVienSchema = new mongoose.Schema({
     ten: {
         type: String,
-        //required: true
+        required: true
     },
     diachi: {
         type: String

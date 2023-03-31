@@ -18,6 +18,7 @@
     <table class="table table-striped table-bordered">
         <thead>
             <tr>
+                <th>stt</th>
                 <th>Tên</th>
                 <th>Địa chỉ</th>
                 <th>Lương</th>
@@ -27,9 +28,18 @@
         <tbody>
             {{#each nvData}}
             <tr>
+                <th scope="row">{{@index}}</th>
                 <td>{{ten}}</td>
                 <td>{{diachi}}</td>
                 <td>{{luong}}</td>
+                <td class="col-1">
+                    <form method="get" action="editNV">
+                        <button name="idEdit" value={{_id}} class="btn btn-primary mb-2" type="submit">Sửa</button>
+                    </form>
+                    <form method="get" action="deleteNV">
+                        <button name="idNV" value={{_id}} class="btn btn-primary" type="submit">Xóa</button>
+                    </form>
+                </td>
             </tr>
             {{/each}}
         </tbody>
